@@ -12,7 +12,8 @@ ARG YQ_VERSION="4.45.1"
 RUN apk add --no-cache \
     curl \
     git \
-    jq
+    jq \
+    openssh-client
 
 # Instalar yq
 RUN curl -sSLO "https://github.com/mikefarah/yq/releases/download/v${YQ_VERSION}/yq_linux_${TARGETARCH}" && \

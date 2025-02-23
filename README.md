@@ -7,6 +7,7 @@ Esto es una imagen que tiene las siguientes herramientas:
 - argo cd cli
 - argo rollout cli
 - git
+- openssh-client
 
 
 ## Como hacer el build?
@@ -16,7 +17,7 @@ Instale docker buildx
 Corra el siguiente comando:
 
 ```
-docker buildx build --platform linux/amd64,linux/arm64 -t quinont/argo-ecosystem-tools:2 -t quinont/argo-ecosystem-tools:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t quinont/argo-ecosystem-tools:3 -t quinont/argo-ecosystem-tools:latest --push .
 ```
 
 ## Como ocuparlo?
@@ -24,7 +25,7 @@ docker buildx build --platform linux/amd64,linux/arm64 -t quinont/argo-ecosystem
 Corra el siguiente comando:
 
 ```
-docker run --rm -it  quinont/argo-ecosystem-tools:2
+docker run --rm -it  quinont/argo-ecosystem-tools:3
 ```
 
 
